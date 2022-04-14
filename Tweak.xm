@@ -1,4 +1,6 @@
-#define DEFAULT_RATE 2.0f
+#import <Foundation/Foundation.h>
+
+#define DEFAULT_RATE 1.0f
 
 
 @interface YTVarispeedSwitchControllerOption : NSObject
@@ -46,8 +48,8 @@
 - (id)init {
 	id result = %orig;
 
-	const int size = 10;
-	float speeds[] = {0.5, 1.0, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0, 3.5, 4.0};
+    const int size = 14;
+    float speeds[] = {0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.5, 4.0};
 	id varispeedSwitchControllerOptions[size];
 
 	for (int i = 0; i < size; ++i) {
